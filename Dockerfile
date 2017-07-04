@@ -2,7 +2,7 @@
 # Running:  docker run -v $PWD:/zephyr -ti zephyr
 # Debug:    docker run -v $PWD:/zephyr -ti --entrypoint="/bin/bash" zephyr
 
-FROM ubuntu:16.04
+FROM ubuntu:latest
 RUN apt-get update
 RUN apt-get install -y wget git make gcc g++ python3-ply ncurses-dev python3-yaml dfu-util device-tree-compiler xz-utils
 RUN wget https://github.com/zephyrproject-rtos/meta-zephyr-sdk/releases/download/0.9.1/zephyr-sdk-0.9.1-setup.run
